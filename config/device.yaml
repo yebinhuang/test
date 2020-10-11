@@ -1,0 +1,7 @@
+Android:
+  platformName: Android
+  deviceName: '127.0.0.1:7555'
+  #  p40:MDX0220324004291
+  #  网易模拟器：127.0.0.1:7555
+  appPackage: 'com.tencent.mm' # 微信apk包名
+  appActivity: ''
