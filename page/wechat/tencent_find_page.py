@@ -21,6 +21,9 @@ class TencentFindPage(Base):
         self.p_click_input(search_box, txt)
         # 点击目标
         self.p_click(target)
+        # 退出H5页面
+        self.back_btn()
+        self.back_btn()
 
 
 if __name__ == '__main__':

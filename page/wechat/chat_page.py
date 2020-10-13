@@ -24,7 +24,7 @@ class TencentPage(Base):
             self.click_5(clear_chat_btn1)
             self.click_5(clear_chat_btn2)
         else:
-            print("继续执行")
+            print("聊天用户不存在，继续执行")
 
 
 if __name__ == '__main__':

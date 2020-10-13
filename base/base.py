@@ -1,6 +1,5 @@
 # 对象库层-基类，把定位元素的方法定义在基类中
 from airtest.core.api import *
-
 from app_util import AppDriver
 
 
@@ -90,7 +89,9 @@ class Base:
         xy = self.driver.get_screen_size()
         x = xy[0]
         y = xy[1]
-        swipe([x * 0.8, y * 0.5], [x * 0.2, y * 5])
+        # swipe([x * 0.8, y * 0.5], [x * 0.2, y * 0.5])
+        # 健康档案左滑动
+        swipe([x * 0.9, y * 0.18], [x * 0.03, y * 0.18])
 
     def right(self):
         xy = self.driver.get_screen_size()
@@ -112,14 +113,26 @@ class Base:
         touch(Template(filename=filename))
         text(txt)
 
+    def input(self, txt):
+        text(txt)
+
     # 右边沿点击和输入
-    def click_6(self, txt, filename=""):
+    def click_6(self, filename=""):
+        touch(Template(filename=filename, target_pos=6))
+
+    def click_6_input(self, txt, filename=""):
         touch(Template(filename=filename, target_pos=6))
         text(txt)
 
     # 底部中间点击
     def click_8(self, filename=""):
         touch(Template(filename=filename, target_pos=8))
+
+    def click_9(self, filename=""):
+        touch(Template(filename=filename, target_pos=9))
+
+    def click_3(self, filename=""):
+        touch(Template(filename=filename, target_pos=3))
 
     # 底部中间点击输入
     def click_8_input(self, txt, filename=""):
@@ -130,3 +143,12 @@ class Base:
     def clear_txt(self, location):
         for i in range(location):
             keyevent("KEYCODE_DEL")
+
+    # 返回按钮
+    def back_btn(self):
+        keyevent("KEYCODE_BACK")
+
+    def get_png(self, txt):
+        # msg描述测试点
+        snapshot(filename="G:/ui_examine/screenshot/{}_{}.png".format(txt, time.strftime("%Y-%m-%d-%H-%M-%S")),
+                 msg=txt)
