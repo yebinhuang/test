@@ -1,15 +1,19 @@
 # 对象库层-基类，把定位元素的方法定义在基类中
-from airtest.core.api import *
-from app_util import AppDriver
+import logging
 
+from BeautifulReport import BeautifulReport
+from airtest.core.api import *
+from app_util import AppDriver, logger_config
 
 # 综合基类
+from conftest import BASE_DIR
 
 
 class Base:
     # 对于基类而言，后续可能添加其它需要封装方法，那么这些方法也可能用到驱动对象
     def __init__(self):
         self.driver = AppDriver().start()
+        logger_config()
 
     # 点击事件
     def p_click(self, location):
@@ -23,25 +27,25 @@ class Base:
     # 断言
     # 图片断言
     # 断言存在
-
     def assert_png(self, txt, filename=""):
         try:
-            assert_exists(Template(filename=filename), txt)
-            print("断言成功,目标存在")
+            assert_exists(Template(filename=filename))
+            logging.info("----------{}-断言成功,目标存在---------".format(txt))
+            self.get_png(txt)
             return "断言成功,目标存在"
         except:
-            print("断言失败,目标不存在")
+            logging.info("----------{}-断言失败,目标不存在---------".format(txt))
             return "断言失败,目标不存在"
 
     # 断言不存在
     def assert_not_png(self, txt, filename=""):
         try:
-            assert_not_exists(Template(filename=filename), txt)
-            print("断言成功,目标不存在")
-            return "断言成功,目标不存在"
+            assert_not_exists(Template(filename=filename))
+            logging.info("----------{}-断言成功,目标不存在---------".format(txt))
+            self.get_png(txt)
         except:
-            print("断言成功,目标存在")
-            return "断言成功,目标存在"
+            logging.info("----------{}-断言不成功,目标存在---------".format(txt))
+            return "断言不成功,目标存在"
         # 后期补判断
 
     # 文字断言
@@ -150,5 +154,8 @@ class Base:
 
     def get_png(self, txt):
         # msg描述测试点
-        snapshot(filename="G:/ui_examine/screenshot/{}_{}.png".format(txt, time.strftime("%Y-%m-%d-%H-%M-%S")),
-                 msg=txt)
+        png_name = BASE_DIR + "/screenshot/{}_{}.png".format(txt, time.strftime("%Y-%m-%d-%H-%M-%S"))
+        snapshot(filename=png_name, msg=txt)
+        return snapshot(filename=png_name, msg=txt)
+    # 删除图片和日记
+    pass

@@ -2,9 +2,12 @@
 import logging
 import time
 import unittest
+
+from BeautifulReport import BeautifulReport
 from dateutil.parser import parse
 from parameterized import parameterized
 from app_util import AppDriver, logger_config
+from page.wechat.back_home_page import BackHomePage
 from read_data.read_yaml import build_ui_data
 
 
@@ -16,7 +19,6 @@ class Test(unittest.TestCase):
 
     # 启动函数，每个用例测试前，都会执行该函数
     def setUp(self):
-        self.logger = logger_config()
         self.start_time = parse(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         print("开始测试时间：", self.start_time)
         time.sleep(3)
@@ -34,6 +36,7 @@ class Test(unittest.TestCase):
     def test_01(self):
         u"""你好"""
         logging.info("----hhhh---")
+        BackHomePage().back_home_page()
         # TencentPage().clear_chat_logs_page(yue_xin_yun)
         # TencentPage().clear_chat_logs_page(jksjkj)
         # JUIPage().jksjkj_ui_page()

@@ -7,9 +7,11 @@ from BeautifulReport import BeautifulReport
 # 文件地址
 from ddt import ddt
 
-suite = unittest.defaultTestLoader.discover('G:/ui_examine/case', pattern='test*.py')
+from conftest import BASE_DIR
+
+suite = unittest.defaultTestLoader.discover(BASE_DIR + '/case', pattern='test*.py')
 # 用例名称
-description = '健康数据空间公众号'
+description = '健康数据空间公众号项目测试用例'
 # 测试报告名称
 project_nanme = "健康数据空间项目-测试报告"
 file_name = "{}_{}.html".format(project_nanme, time.strftime("%Y-%m-%d-%H-%M-%S"))

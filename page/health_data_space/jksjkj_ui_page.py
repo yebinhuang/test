@@ -11,6 +11,8 @@ class JUIPage(Base):
         super().__init__()
 
     def jksjkj_ui_page(self):
+        # ----------------------------------------------------
+        """个人中心页面"""
         # 搜索框按钮
         self.p_click(search_btn)
         # 输入要搜索的内容
@@ -20,6 +22,9 @@ class JUIPage(Base):
         self.click_5(jksjkj_rukou)
         print("个人中心页面")
         self.assert_png("个人中心页面进入成功", grzx_duanyan)
+
+        # ------------------------------------------------------
+        """健康档案页面"""
         self.click_5(jkts_rukou)
         self.click_5(jkda_rukou)
         self.assert_png("病例概要进入成功", jr_jkda_duanyuan)
