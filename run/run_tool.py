@@ -3,12 +3,8 @@
 import time
 import unittest
 from BeautifulReport import BeautifulReport
-
-# 文件地址
-from ddt import ddt
-
 from conftest import BASE_DIR
-
+# 文件地址
 suite = unittest.defaultTestLoader.discover(BASE_DIR + '/case', pattern='test*.py')
 # 用例名称
 description = '健康数据空间公众号项目测试用例'

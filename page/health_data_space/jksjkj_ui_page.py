@@ -10,7 +10,7 @@ class JUIPage(Base):
         # 重写父类初始化方法
         super().__init__()
 
-    def jksjkj_ui_page(self):
+    def personal_center_page(self):
         # ----------------------------------------------------
         """个人中心页面"""
         # 搜索框按钮
@@ -24,9 +24,10 @@ class JUIPage(Base):
         self.assert_png("个人中心页面进入成功", grzx_duanyan)
 
         # ------------------------------------------------------
-        """健康档案页面"""
+        """健康档案----健康态势页面"""
         self.click_5(jkts_rukou)
         self.click_5(jkda_rukou)
+        # test_03-----档案判断————————————
         self.assert_png("病例概要进入成功", jr_jkda_duanyuan)
         self.click_3(blgy_zk_click)
         self.assert_png("基本信息正确", blgy_zk_duanyan)
@@ -43,6 +44,8 @@ class JUIPage(Base):
         # # 调用返回
         # self.back_btn()
         # 滑动两次
+
+        """健康档案----一般护理页面"""
         time.sleep(1)
         self.left()
         self.left()
@@ -52,14 +55,17 @@ class JUIPage(Base):
 
         self.assert_png("页面展示成功", ybhlj_duanyan)
 
+        """健康档案----转院记录页面"""
         # 滑动三次
         self.left()
         self.left()
         self.left()
         self.click_5(zkjl_click)
-
         self.click_3(zkjl_zk)
         self.assert_png("页面展开成功", zkjl_duanyan)
+
+        # ------------------------------------------------------
+        """退出H5"""
         # 调用微信退出H5页面
         self.p_click(quit_h5_btn)
         # 调用上面的健康数据空间入口
@@ -83,7 +89,9 @@ class JUIPage(Base):
         time.sleep(1)
         self.back_btn()
         # 返回*2
-        # *2
+
+        # ------------------------------------------------------
+        """健康档案处理"""
         self.click_5(syc_photo_click)
         # 等待1分钟
         time.sleep(1)

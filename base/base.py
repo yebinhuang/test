@@ -1,7 +1,5 @@
 # 对象库层-基类，把定位元素的方法定义在基类中
 import logging
-
-from BeautifulReport import BeautifulReport
 from airtest.core.api import *
 from app_util import AppDriver, logger_config
 
@@ -31,21 +29,21 @@ class Base:
         try:
             assert_exists(Template(filename=filename))
             logging.info("----------{}-断言成功,目标存在---------".format(txt))
-            self.get_png(txt)
             return "断言成功,目标存在"
         except:
-            logging.info("----------{}-断言失败,目标不存在---------".format(txt))
-            return "断言失败,目标不存在"
+            self.get_png(txt)
+            logging.error("----------{}-断言失败,目标不存在！！！！---------".format(txt))
+            return "{}-断言失败,目标不存在".format(txt)
 
     # 断言不存在
     def assert_not_png(self, txt, filename=""):
         try:
             assert_not_exists(Template(filename=filename))
             logging.info("----------{}-断言成功,目标不存在---------".format(txt))
-            self.get_png(txt)
         except:
-            logging.info("----------{}-断言不成功,目标存在---------".format(txt))
-            return "断言不成功,目标存在"
+            self.get_png(txt)
+            logging.error("----------{}-断言不成功,目标存在！！！！---------".format(txt))
+            return "{}-断言失败,目标存在".format(txt)
         # 后期补判断
 
     # 文字断言
@@ -157,5 +155,6 @@ class Base:
         png_name = BASE_DIR + "/screenshot/{}_{}.png".format(txt, time.strftime("%Y-%m-%d-%H-%M-%S"))
         snapshot(filename=png_name, msg=txt)
         return snapshot(filename=png_name, msg=txt)
+
     # 删除图片和日记
     pass

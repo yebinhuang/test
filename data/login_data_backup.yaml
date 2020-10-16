@@ -1,9 +1,0 @@
--
-  type: False
-  num: ' '
-  pwd: 'lm123456'
-  expect: '登录账号不能为空'
-- type: True
-  num: '13157523435'
-  pwd: 'lm123456'
-  expect: '3435'

@@ -6,7 +6,6 @@ site = "G:/app_airtest_auto/png/"
 wechat_png = "wechat_png/"
 A = site + wechat_png
 zhuye = A + "zhuye.png"
-
 # # 退出H5页面按钮
 quit_h5_btn = "com.tencent.mm:id/dn"
 # # 微信返回键按钮
@@ -91,13 +90,18 @@ tijiao_btn = B + "tijiao_btn.png"
 fanhui_jksjkj_btn = B + "fanhui_jksjkj_btn.png"
 
 # --------------------------------------   C.健康数据空间--jksjkj_png/   --------------------------------------------
+
 jksjkj_png = "jksjkj_png/"
 C = site + jksjkj_png
+# 首次进入健康数据空间
+xinxishouquan = C + "xinxishouquan.png"
 jksjkj_rukou = C + "jksjkj_rukou.png"
 
 grzx_duanyan = C + "grzx_duanyan.png"
-
+# 健康态势入口
 jkts_rukou = C + "jkts_rukou.png"
+# 健康态势断言
+jkts_duanyan = C + "jkts_duanyan.png"
 
 jkda_rukou = C + "jkda_rukou.png"
 

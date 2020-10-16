@@ -1,484 +1,84 @@
-2020-10-14 12:05:07,534 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 13:35:49,473 INFO [root] [test_ui.py(test_01:37)] - ----hhhh---
-2020-10-14 13:35:49,475 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 get-state
-2020-10-14 13:35:49,570 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 wait-for-device
-2020-10-14 13:35:49,622 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.sdk
-2020-10-14 13:35:49,692 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell monkey -p com.tencent.mm -c android.intent.category.LAUNCHER 1 ; echo ---$?---
-2020-10-14 13:35:50,142 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys activity top ; echo ---$?---
-2020-10-14 13:35:50,280 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys package com.netease.nie.yosemite ; echo ---$?---
-2020-10-14 13:35:50,347 INFO [airtest.core.android.yosemite] [yosemite.py(_install_apk_upgrade:38)] - local version code is 302, installed version code is 302
-2020-10-14 13:35:50,348 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell settings get secure default_input_method ; echo ---$?---
-2020-10-14 13:35:50,844 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ime list -a ; echo ---$?---
-2020-10-14 13:35:51,331 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys package com.netease.open.pocoservice ; echo ---$?---
-2020-10-14 13:35:51,413 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys package com.netease.open.pocoservice.test ; echo ---$?---
-2020-10-14 13:35:51,483 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:18734 tcp:10080
-2020-10-14 13:35:51,543 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:11336 tcp:10081
-2020-10-14 13:35:51,611 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ps ; echo ---$?---
-2020-10-14 13:35:51,712 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell am force-stop com.netease.open.pocoservice ; echo ---$?---
-2020-10-14 13:35:52,250 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell am start -n com.netease.open.pocoservice/.TestActivity ; echo ---$?---
-2020-10-14 13:35:52,733 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell am instrument -w -e debug false -e class com.netease.open.pocoservice.InstrumentedTestAsLauncher com.netease.open.pocoservice.test/android.support.test.runner.AndroidJUnitRunner
-2020-10-14 13:35:59,105 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 13:35:59,105 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 13:37:55,295 INFO [root] [test_ui.py(test_01:37)] - ----hhhh---
-2020-10-14 13:37:55,296 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 get-state
-2020-10-14 13:37:55,413 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 wait-for-device
-2020-10-14 13:37:55,466 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.sdk
-2020-10-14 13:37:55,536 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell monkey -p com.tencent.mm -c android.intent.category.LAUNCHER 1 ; echo ---$?---
-2020-10-14 13:37:55,861 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys activity top ; echo ---$?---
-2020-10-14 13:37:56,976 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys package com.netease.nie.yosemite ; echo ---$?---
-2020-10-14 13:37:57,055 INFO [airtest.core.android.yosemite] [yosemite.py(_install_apk_upgrade:38)] - local version code is 302, installed version code is 302
-2020-10-14 13:37:57,055 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell settings get secure default_input_method ; echo ---$?---
-2020-10-14 13:37:57,553 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ime list -a ; echo ---$?---
-2020-10-14 13:37:58,114 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys package com.netease.open.pocoservice ; echo ---$?---
-2020-10-14 13:37:58,212 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys package com.netease.open.pocoservice.test ; echo ---$?---
-2020-10-14 13:37:58,304 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:16275 tcp:10080
-2020-10-14 13:37:58,373 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:15991 tcp:10081
-2020-10-14 13:37:58,466 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ps ; echo ---$?---
-2020-10-14 13:37:58,573 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell am force-stop com.netease.open.pocoservice ; echo ---$?---
-2020-10-14 13:37:59,204 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell am start -n com.netease.open.pocoservice/.TestActivity ; echo ---$?---
-2020-10-14 13:37:59,797 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell am instrument -w -e debug false -e class com.netease.open.pocoservice.InstrumentedTestAsLauncher com.netease.open.pocoservice.test/android.support.test.runner.AndroidJUnitRunner
-2020-10-14 13:38:11,266 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 13:38:11,266 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 13:43:06,687 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 13:43:06,687 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell pm path jp.co.cyberagent.stf.rotationwatcher ; echo ---$?---
-2020-10-14 13:43:07,019 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell export CLASSPATH=/data/app/jp.co.cyberagent.stf.rotationwatcher-1/base.apk;exec app_process /system/bin jp.co.cyberagent.stf.rotationwatcher.RotationWatcher
-2020-10-14 13:43:07,375 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 13:43:07,508 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 13:43:07,608 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
-2020-10-14 13:43:07,792 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:73)] - WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.
-version:6
-2020-10-14 13:43:07,792 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:83)] - upgrade minicap to lastest version: -1->6
-2020-10-14 13:43:07,792 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell rm /data/local/tmp/minicap*
-2020-10-14 13:43:07,957 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.product.cpu.abi
-2020-10-14 13:43:08,109 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.preview_sdk
-2020-10-14 13:43:08,257 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.release
-2020-10-14 13:43:08,471 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\x86\minicap /data/local/tmp/minicap
-2020-10-14 13:43:09,314 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 13:43:09,573 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\minicap-shared/aosp/libs/android-23/x86/minicap.so /data/local/tmp/minicap.so
-2020-10-14 13:43:09,865 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 13:43:10,092 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 13:43:10,092 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:13863 localabstract:minicap_13863
-2020-10-14 13:43:10,334 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 13:43:10,869 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 13:43:11,157 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_13863' -P 1024x576@1024x576/270 -l 2>&1
-2020-10-14 13:43:11,312 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 13:43:11,341 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 12300'
-2020-10-14 13:43:11,341 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 1024x576@1024x576/3'
-2020-10-14 13:43:11,341 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 13:43:11,359 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 13:43:11,359 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 13:43:11,362 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 13:43:11,362 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 13:43:11,362 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 13:43:11,362 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 13:43:11,670 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 13:43:11,671 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 13:43:11,675 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 12300, 1024, 576, 1024, 576, 3, 2)
-2020-10-14 13:43:11,675 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:271)] - quirk_flag found, going to resetup
-2020-10-14 13:43:11,676 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:294)] - minicap stream ends
-2020-10-14 13:43:11,676 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 13:43:11,677 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:13863
-2020-10-14 13:43:11,861 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:18538 localabstract:minicap_18538
-2020-10-14 13:43:11,958 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 13:43:12,230 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 13:43:12,435 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_18538' -P 576x1024@576x1024/0 -l 2>&1
-2020-10-14 13:43:12,662 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 13:43:12,679 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 12427'
-2020-10-14 13:43:12,679 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 576x1024@576x1024/0'
-2020-10-14 13:43:12,682 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 13:43:12,714 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 13:43:12,714 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 13:43:12,721 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 13:43:12,727 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 13:43:12,727 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 13:43:12,728 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 13:43:13,085 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 13:43:13,086 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 13:43:13,091 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 12427, 576, 1024, 576, 1024, 0, 2)
-2020-10-14 13:43:13,091 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 13:43:13,634 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 13:43:13,846 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 13:43:14,176 DEBUG [airtest.core.api] [cv.py(_try_match:170)] - try match with SURFMatching
-2020-10-14 13:43:14,812 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(find_best_result:96)] - [SURF] threshold=0.7, result={'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 13:43:14,813 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(wrapper:24)] - find_best_result() run time is 0.64 s.
-2020-10-14 13:43:14,813 DEBUG [airtest.core.api] [cv.py(match_in:140)] - match result: {'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 13:43:14,814 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 13:43:15,337 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:19957
-2020-10-14 13:43:15,354 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:13366
-2020-10-14 13:43:15,373 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:18538
-2020-10-14 13:43:15,424 DEBUG [airtest.core.android.rotation] [rotation.py(_refresh_by_ow:67)] - orientationWatcher has ended
-2020-10-14 13:48:11,569 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 13:49:32,276 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 13:49:32,277 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell pm path jp.co.cyberagent.stf.rotationwatcher ; echo ---$?---
-2020-10-14 13:49:32,675 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell export CLASSPATH=/data/app/jp.co.cyberagent.stf.rotationwatcher-1/base.apk;exec app_process /system/bin jp.co.cyberagent.stf.rotationwatcher.RotationWatcher
-2020-10-14 13:49:32,946 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 13:49:33,040 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 13:49:33,145 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
-2020-10-14 13:49:33,329 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:73)] - WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.
-version:6
-2020-10-14 13:49:33,329 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:83)] - upgrade minicap to lastest version: -1->6
-2020-10-14 13:49:33,330 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell rm /data/local/tmp/minicap*
-2020-10-14 13:49:33,480 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.product.cpu.abi
-2020-10-14 13:49:33,624 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.preview_sdk
-2020-10-14 13:49:33,809 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.release
-2020-10-14 13:49:33,959 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\x86\minicap /data/local/tmp/minicap
-2020-10-14 13:49:34,609 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 13:49:34,744 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\minicap-shared/aosp/libs/android-23/x86/minicap.so /data/local/tmp/minicap.so
-2020-10-14 13:49:34,978 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 13:49:35,161 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 13:49:35,161 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:14976 localabstract:minicap_14976
-2020-10-14 13:49:35,272 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 13:49:35,528 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 13:49:35,755 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14976' -P 1024x576@1024x576/270 -l 2>&1
-2020-10-14 13:49:35,974 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 13:49:35,992 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 13639'
-2020-10-14 13:49:35,992 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 1024x576@1024x576/3'
-2020-10-14 13:49:35,993 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 13:49:35,995 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 13:49:35,996 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 13:49:35,996 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 13:49:35,996 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 13:49:35,997 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 13:49:35,997 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 13:49:36,209 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 13:49:36,209 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 13:49:36,213 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 13639, 1024, 576, 1024, 576, 3, 2)
-2020-10-14 13:49:36,213 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:271)] - quirk_flag found, going to resetup
-2020-10-14 13:49:36,213 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:294)] - minicap stream ends
-2020-10-14 13:49:36,213 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 13:49:36,214 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:14976
-2020-10-14 13:49:36,302 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:16235 localabstract:minicap_16235
-2020-10-14 13:49:36,365 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 13:49:37,265 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 13:49:37,487 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_16235' -P 576x1024@576x1024/0 -l 2>&1
-2020-10-14 13:49:37,683 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 13:49:37,708 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 13706'
-2020-10-14 13:49:37,708 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 576x1024@576x1024/0'
-2020-10-14 13:49:37,708 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 13:49:37,762 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 13:49:37,762 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 13:49:37,768 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 13:49:37,777 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 13:49:37,777 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 13:49:37,777 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 13:49:38,110 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 13:49:38,110 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 13:49:38,120 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 13706, 576, 1024, 576, 1024, 0, 2)
-2020-10-14 13:49:38,121 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 13:49:38,307 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 13:49:38,549 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 13:49:38,719 DEBUG [airtest.core.api] [cv.py(_try_match:170)] - try match with SURFMatching
-2020-10-14 13:49:39,271 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(find_best_result:96)] - [SURF] threshold=0.7, result={'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 13:49:39,272 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(wrapper:24)] - find_best_result() run time is 0.55 s.
-2020-10-14 13:49:39,272 DEBUG [airtest.core.api] [cv.py(match_in:140)] - match result: {'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 13:49:39,273 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 13:49:46,806 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell am force-stop com.tencent.mm ; echo ---$?---
-2020-10-14 13:49:47,365 INFO [airtest.core.android.rotation] [rotation.py(_run:80)] - update orientation 3->0
-2020-10-14 13:49:47,365 DEBUG [airtest.core.android.minicap] [minicap.py(update_rotation:371)] - update_rotation: 0
-2020-10-14 13:49:47,825 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:18245
-2020-10-14 13:49:47,835 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:14708
-2020-10-14 13:49:47,848 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:16235
-2020-10-14 13:49:47,882 DEBUG [airtest.core.android.rotation] [rotation.py(_refresh_by_ow:67)] - orientationWatcher has ended
-2020-10-14 14:01:52,903 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 14:01:57,613 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 14:02:02,293 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:05:25,568 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 14:05:27,208 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 14:05:29,395 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:06:07,890 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 14:06:07,891 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell pm path jp.co.cyberagent.stf.rotationwatcher ; echo ---$?---
-2020-10-14 14:06:08,207 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell export CLASSPATH=/data/app/jp.co.cyberagent.stf.rotationwatcher-1/base.apk;exec app_process /system/bin jp.co.cyberagent.stf.rotationwatcher.RotationWatcher
-2020-10-14 14:06:08,415 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 14:06:08,486 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 14:06:08,555 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
-2020-10-14 14:06:08,636 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:73)] - WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.
-version:6
-2020-10-14 14:06:08,636 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:83)] - upgrade minicap to lastest version: -1->6
-2020-10-14 14:06:08,636 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell rm /data/local/tmp/minicap*
-2020-10-14 14:06:08,706 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.product.cpu.abi
-2020-10-14 14:06:08,769 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.preview_sdk
-2020-10-14 14:06:08,824 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.release
-2020-10-14 14:06:08,886 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\x86\minicap /data/local/tmp/minicap
-2020-10-14 14:06:09,315 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 14:06:09,372 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\minicap-shared/aosp/libs/android-23/x86/minicap.so /data/local/tmp/minicap.so
-2020-10-14 14:06:09,452 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 14:06:09,520 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 14:06:09,520 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:12130 localabstract:minicap_12130
-2020-10-14 14:06:09,587 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:06:09,675 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:06:09,751 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_12130' -P 1024x576@1024x576/270 -l 2>&1
-2020-10-14 14:06:09,804 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 14:06:09,813 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 15651'
-2020-10-14 14:06:09,813 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 1024x576@1024x576/3'
-2020-10-14 14:06:09,814 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 14:06:09,814 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 14:06:09,814 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 14:06:09,814 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 14:06:09,815 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 14:06:09,815 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 14:06:09,815 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 14:06:09,846 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 14:06:09,846 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 14:06:09,848 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 15651, 1024, 576, 1024, 576, 3, 2)
-2020-10-14 14:06:09,848 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 14:06:09,848 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:271)] - quirk_flag found, going to resetup
-2020-10-14 14:06:09,848 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:294)] - minicap stream ends
-2020-10-14 14:06:09,849 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:12130
-2020-10-14 14:06:09,921 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:13288 localabstract:minicap_13288
-2020-10-14 14:06:09,974 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:06:10,047 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:06:10,115 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_13288' -P 576x1024@576x1024/0 -l 2>&1
-2020-10-14 14:06:10,170 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 14:06:10,179 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 15668'
-2020-10-14 14:06:10,180 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 576x1024@576x1024/0'
-2020-10-14 14:06:10,180 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 14:06:10,181 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 14:06:10,182 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 14:06:10,183 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 14:06:10,183 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 14:06:10,183 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 14:06:10,184 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 14:06:10,217 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 14:06:10,217 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 14:06:10,219 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 14:06:10,219 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 15668, 576, 1024, 576, 1024, 0, 2)
-2020-10-14 14:06:10,337 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:06:10,430 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:06:10,501 DEBUG [airtest.core.api] [cv.py(_try_match:170)] - try match with SURFMatching
-2020-10-14 14:06:10,885 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(find_best_result:96)] - [SURF] threshold=0.7, result={'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 14:06:10,885 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(wrapper:24)] - find_best_result() run time is 0.38 s.
-2020-10-14 14:06:10,886 DEBUG [airtest.core.api] [cv.py(match_in:140)] - match result: {'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 14:06:10,886 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:06:11,127 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:11844
-2020-10-14 14:06:11,136 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:11666
-2020-10-14 14:06:11,147 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:13288
-2020-10-14 14:06:11,177 DEBUG [airtest.core.android.rotation] [rotation.py(_refresh_by_ow:67)] - orientationWatcher has ended
-2020-10-14 14:07:56,246 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 14:07:56,247 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell pm path jp.co.cyberagent.stf.rotationwatcher ; echo ---$?---
-2020-10-14 14:07:56,568 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell export CLASSPATH=/data/app/jp.co.cyberagent.stf.rotationwatcher-1/base.apk;exec app_process /system/bin jp.co.cyberagent.stf.rotationwatcher.RotationWatcher
-2020-10-14 14:07:56,818 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 14:07:56,884 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 14:07:56,956 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
-2020-10-14 14:07:57,038 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:73)] - WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.
-version:6
-2020-10-14 14:07:57,038 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:83)] - upgrade minicap to lastest version: -1->6
-2020-10-14 14:07:57,038 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell rm /data/local/tmp/minicap*
-2020-10-14 14:07:57,133 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.product.cpu.abi
-2020-10-14 14:07:57,193 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.preview_sdk
-2020-10-14 14:07:57,266 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.release
-2020-10-14 14:07:57,342 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\x86\minicap /data/local/tmp/minicap
-2020-10-14 14:07:57,706 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 14:07:57,763 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\minicap-shared/aosp/libs/android-23/x86/minicap.so /data/local/tmp/minicap.so
-2020-10-14 14:07:57,841 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 14:07:57,919 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 14:07:57,920 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:12973 localabstract:minicap_12973
-2020-10-14 14:07:58,003 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:07:58,097 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:07:58,174 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_12973' -P 1024x576@1024x576/270 -l 2>&1
-2020-10-14 14:07:58,234 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 14:07:58,242 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 15945'
-2020-10-14 14:07:58,242 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 1024x576@1024x576/3'
-2020-10-14 14:07:58,242 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 14:07:58,243 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 14:07:58,243 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 14:07:58,244 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 14:07:58,244 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 14:07:58,244 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 14:07:58,244 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 14:07:58,281 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 14:07:58,282 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 14:07:58,285 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 14:07:58,285 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 15945, 1024, 576, 1024, 576, 3, 2)
-2020-10-14 14:07:58,286 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:271)] - quirk_flag found, going to resetup
-2020-10-14 14:07:58,286 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:294)] - minicap stream ends
-2020-10-14 14:07:58,287 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:12973
-2020-10-14 14:07:58,370 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:14877 localabstract:minicap_14877
-2020-10-14 14:07:58,427 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:07:58,505 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:07:58,569 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14877' -P 576x1024@576x1024/0 -l 2>&1
-2020-10-14 14:07:58,622 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 14:07:58,629 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 15960'
-2020-10-14 14:07:58,630 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 576x1024@576x1024/0'
-2020-10-14 14:07:58,630 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 14:07:58,632 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 14:07:58,632 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 14:07:58,635 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 14:07:58,635 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 14:07:58,635 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 14:07:58,636 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 14:07:58,669 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 14:07:58,669 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 14:07:58,671 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 15960, 576, 1024, 576, 1024, 0, 2)
-2020-10-14 14:07:58,671 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 14:07:58,803 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:07:58,894 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:07:58,988 DEBUG [airtest.core.api] [cv.py(_try_match:170)] - try match with SURFMatching
-2020-10-14 14:07:59,328 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(find_best_result:96)] - [SURF] threshold=0.7, result={'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 14:07:59,329 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(wrapper:24)] - find_best_result() run time is 0.34 s.
-2020-10-14 14:07:59,329 DEBUG [airtest.core.api] [cv.py(match_in:140)] - match result: {'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 14:07:59,330 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:07:59,611 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:19351
-2020-10-14 14:07:59,621 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:11402
-2020-10-14 14:07:59,636 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:14877
-2020-10-14 14:07:59,656 DEBUG [airtest.core.android.rotation] [rotation.py(_refresh_by_ow:67)] - orientationWatcher has ended
-2020-10-14 14:10:53,344 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 14:10:53,345 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell pm path jp.co.cyberagent.stf.rotationwatcher ; echo ---$?---
-2020-10-14 14:10:53,666 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell export CLASSPATH=/data/app/jp.co.cyberagent.stf.rotationwatcher-1/base.apk;exec app_process /system/bin jp.co.cyberagent.stf.rotationwatcher.RotationWatcher
-2020-10-14 14:10:53,899 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 14:10:53,964 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 14:10:54,027 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
-2020-10-14 14:10:54,100 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:73)] - WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.
-version:6
-2020-10-14 14:10:54,100 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:83)] - upgrade minicap to lastest version: -1->6
-2020-10-14 14:10:54,100 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell rm /data/local/tmp/minicap*
-2020-10-14 14:10:54,160 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.product.cpu.abi
-2020-10-14 14:10:54,222 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.preview_sdk
-2020-10-14 14:10:54,285 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.release
-2020-10-14 14:10:54,341 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\x86\minicap /data/local/tmp/minicap
-2020-10-14 14:10:54,756 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 14:10:54,824 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\minicap-shared/aosp/libs/android-23/x86/minicap.so /data/local/tmp/minicap.so
-2020-10-14 14:10:54,929 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 14:10:55,000 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 14:10:55,000 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:14760 localabstract:minicap_14760
-2020-10-14 14:10:55,066 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:10:55,138 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:10:55,204 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_14760' -P 1024x576@1024x576/270 -l 2>&1
-2020-10-14 14:10:55,263 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 14:10:55,271 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 16165'
-2020-10-14 14:10:55,273 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 1024x576@1024x576/3'
-2020-10-14 14:10:55,273 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 14:10:55,274 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 14:10:55,274 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 14:10:55,275 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 14:10:55,275 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 14:10:55,275 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 14:10:55,275 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 14:10:55,311 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 14:10:55,312 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 14:10:55,314 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 16165, 1024, 576, 1024, 576, 3, 2)
-2020-10-14 14:10:55,314 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 14:10:55,314 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:271)] - quirk_flag found, going to resetup
-2020-10-14 14:10:55,315 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:294)] - minicap stream ends
-2020-10-14 14:10:55,315 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:14760
-2020-10-14 14:10:55,401 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:16900 localabstract:minicap_16900
-2020-10-14 14:10:55,463 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:10:55,561 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:10:55,636 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_16900' -P 576x1024@576x1024/0 -l 2>&1
-2020-10-14 14:10:55,690 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 14:10:55,697 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 16180'
-2020-10-14 14:10:55,698 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 576x1024@576x1024/0'
-2020-10-14 14:10:55,698 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 14:10:55,700 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 14:10:55,700 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 14:10:55,701 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 14:10:55,701 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 14:10:55,701 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 14:10:55,701 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 14:10:55,736 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 14:10:55,737 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 14:10:55,738 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 14:10:55,738 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 16180, 576, 1024, 576, 1024, 0, 2)
-2020-10-14 14:10:55,822 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:10:55,912 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:10:56,009 DEBUG [airtest.core.api] [cv.py(_try_match:170)] - try match with SURFMatching
-2020-10-14 14:10:56,397 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(find_best_result:96)] - [SURF] threshold=0.7, result={'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 14:10:56,397 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(wrapper:24)] - find_best_result() run time is 0.39 s.
-2020-10-14 14:10:56,398 DEBUG [airtest.core.api] [cv.py(match_in:140)] - match result: {'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 14:10:56,398 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:10:56,671 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:13692
-2020-10-14 14:10:56,682 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:13801
-2020-10-14 14:10:56,694 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:16900
-2020-10-14 14:10:56,724 DEBUG [airtest.core.android.rotation] [rotation.py(_refresh_by_ow:67)] - orientationWatcher has ended
-2020-10-14 14:11:49,417 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 14:11:51,119 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 14:11:53,349 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:13:29,902 INFO [airtest.core.api] [cv.py(loop_find:56)] - Try finding:
-Template(G:/app_airtest_auto/png/wechat_png/zhuye.png)
-2020-10-14 14:13:29,903 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell pm path jp.co.cyberagent.stf.rotationwatcher ; echo ---$?---
-2020-10-14 14:13:30,197 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell export CLASSPATH=/data/app/jp.co.cyberagent.stf.rotationwatcher-1/base.apk;exec app_process /system/bin jp.co.cyberagent.stf.rotationwatcher.RotationWatcher
-2020-10-14 14:13:30,412 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 14:13:30,476 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell ls /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 14:13:30,537 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
-2020-10-14 14:13:30,612 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:73)] - WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.
-version:6
-2020-10-14 14:13:30,612 DEBUG [airtest.core.android.minicap] [minicap.py(install_or_upgrade:83)] - upgrade minicap to lastest version: -1->6
-2020-10-14 14:13:30,612 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell rm /data/local/tmp/minicap*
-2020-10-14 14:13:30,671 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.product.cpu.abi
-2020-10-14 14:13:30,740 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.preview_sdk
-2020-10-14 14:13:30,796 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell getprop ro.build.version.release
-2020-10-14 14:13:30,851 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\x86\minicap /data/local/tmp/minicap
-2020-10-14 14:13:31,304 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap ; echo ---$?---
-2020-10-14 14:13:31,372 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 push C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\stf_libs\minicap-shared/aosp/libs/android-23/x86/minicap.so /data/local/tmp/minicap.so
-2020-10-14 14:13:31,452 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell chmod 755 /data/local/tmp/minicap.so ; echo ---$?---
-2020-10-14 14:13:31,519 INFO [airtest.core.android.minicap] [minicap.py(install:135)] - minicap installation finished
-2020-10-14 14:13:31,519 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:18174 localabstract:minicap_18174
-2020-10-14 14:13:31,583 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:13:31,664 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:13:31,738 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_18174' -P 1024x576@1024x576/270 -l 2>&1
-2020-10-14 14:13:31,798 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 14:13:31,806 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 16620'
-2020-10-14 14:13:31,806 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 1024x576@1024x576/3'
-2020-10-14 14:13:31,806 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 14:13:31,811 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 14:13:31,811 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 14:13:31,811 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 14:13:31,811 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 14:13:31,812 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 14:13:31,812 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 14:13:31,850 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 14:13:31,850 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 14:13:31,851 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 14:13:31,851 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 16620, 1024, 576, 1024, 576, 3, 2)
-2020-10-14 14:13:31,852 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:271)] - quirk_flag found, going to resetup
-2020-10-14 14:13:31,852 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:294)] - minicap stream ends
-2020-10-14 14:13:31,852 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:18174
-2020-10-14 14:13:31,915 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --no-rebind tcp:13723 localabstract:minicap_13723
-2020-10-14 14:13:31,968 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:13:32,893 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:13:32,955 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_13723' -P 576x1024@576x1024/0 -l 2>&1
-2020-10-14 14:13:33,019 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'WARNING: linker: /data/local/tmp/minicap has text relocations. This is wasting memory and prevents security hardening. Please fix.'
-2020-10-14 14:13:33,027 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'PID: 16635'
-2020-10-14 14:13:33,027 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: Using projection 576x1024@576x1024/0'
-2020-10-14 14:13:33,028 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:240) Creating SurfaceComposerClient'
-2020-10-14 14:13:33,029 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:243) Performing SurfaceComposerClient init check'
-2020-10-14 14:13:33,029 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:250) Creating virtual display'
-2020-10-14 14:13:33,029 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:256) Creating buffer queue'
-2020-10-14 14:13:33,029 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:261) Creating CPU consumer'
-2020-10-14 14:13:33,031 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:265) Creating frame waiter'
-2020-10-14 14:13:33,031 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (external/MY_minicap/src/minicap_23.cpp:269) Publishing virtual display'
-2020-10-14 14:13:33,062 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 1771524 bytes for JPG encoder'
-2020-10-14 14:13:33,062 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
-2020-10-14 14:13:33,064 DEBUG [airtest.utils.nbsp] [nbsp.py(_populateQueue:37)] - [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
-2020-10-14 14:13:33,064 DEBUG [airtest.core.android.minicap] [minicap.py(_get_stream:265)] - (1, 24, 16635, 576, 1024, 576, 1024, 0, 2)
-2020-10-14 14:13:33,170 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -i ; echo ---$?---
-2020-10-14 14:13:33,269 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 shell dumpsys window displays ; echo ---$?---
-2020-10-14 14:13:33,365 DEBUG [airtest.core.api] [cv.py(_try_match:170)] - try match with SURFMatching
-2020-10-14 14:13:33,757 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(find_best_result:96)] - [SURF] threshold=0.7, result={'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 14:13:33,758 DEBUG [airtest.aircv.keypoint_base] [keypoint_base.py(wrapper:24)] - find_best_result() run time is 0.39 s.
-2020-10-14 14:13:33,758 DEBUG [airtest.core.api] [cv.py(match_in:140)] - match result: {'result': [58, 252], 'rectangle': [(16, 207), (16, 296), (99, 296), (99, 207)], 'confidence': 0.9618304967880249}
-2020-10-14 14:13:33,759 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:13:34,008 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:19388
-2020-10-14 14:13:34,020 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:13591
-2020-10-14 14:13:34,037 DEBUG [airtest.core.android.adb] [adb.py(start_cmd:144)] - C:\Users\admin\AppData\Local\Programs\Python\Python37\lib\site-packages\airtest\core\android\static\adb\windows\adb.exe -P 5037 -s 127.0.0.1:7555 forward --remove tcp:13723
-2020-10-14 14:13:34,062 DEBUG [airtest.core.android.rotation] [rotation.py(_refresh_by_ow:67)] - orientationWatcher has ended
-2020-10-14 14:14:16,676 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:14:48,690 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:24:31,832 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:25:21,652 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:34:24,743 INFO [root] [base.py(assert_png:32)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:36:09,211 INFO [root] [base.py(assert_png:32)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:38:06,348 INFO [root] [base.py(assert_png:32)] - ----------主页-断言成功,目标存在---------
-2020-10-14 14:52:16,555 INFO [root] [base.py(assert_png:34)] - ----------主页-断言成功,目标存在---------
-2020-10-14 15:08:31,461 INFO [root] [base.py(assert_png:34)] - ----------主页-断言成功,目标存在---------
-2020-10-14 15:10:44,001 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 15:11:01,892 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 15:15:34,561 INFO [root] [base.py(assert_png:33)] - ----------主页-断言成功,目标存在---------
-2020-10-14 15:15:35,305 INFO [root] [base.py(assert_png:38)] - ----------主页-断言失败,目标不存在---------
+2020-10-16 09:41:50,074 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:42:20,407 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:42:20,407 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:42:20,407 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:42:27,096 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:42:27,096 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:42:27,096 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:42:27,096 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:44:27,049 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 09:46:34,991 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:46:34,991 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:46:50,343 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:46:50,343 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:46:50,343 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:47:07,789 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:47:07,789 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:47:07,789 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:47:07,789 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:50:08,856 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 09:50:55,603 INFO [root] [base.py(assert_png:31)] - ----------健康态势页面-断言成功,目标存在---------
+2020-10-16 09:51:02,506 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 09:51:02,506 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 11:27:04,440 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 11:41:16,317 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 11:41:24,681 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 11:41:24,681 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 11:41:39,272 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 11:41:39,272 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 11:41:39,272 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 11:41:47,036 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 11:41:47,036 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 11:41:47,036 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 11:41:47,036 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 12:02:28,844 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------粤信云 + "公众号"-----------------------
+2020-10-16 12:02:33,152 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 12:03:57,354 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------粤信云公众号-----------------------
+2020-10-16 12:04:02,178 ERROR [root] [base.py(assert_png:35)] - ----------个人中心页面-断言失败,目标不存在！！！！---------
+2020-10-16 12:53:12,031 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------粤信云公众号-----------------------
+2020-10-16 12:53:19,199 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 12:56:07,110 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------粤信云公众号-----------------------
+2020-10-16 12:56:16,201 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 12:56:22,958 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 12:56:22,958 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 12:56:34,637 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 12:56:34,637 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 12:56:34,637 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 12:56:48,197 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 12:56:48,197 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 12:56:48,197 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 12:56:55,243 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 12:56:55,243 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 12:56:55,243 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 12:56:55,243 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:11:33,254 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------粤信云公众号-----------------------
+2020-10-16 13:11:42,503 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 13:11:49,250 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:11:49,250 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:11:57,722 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 13:11:57,722 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 13:11:57,722 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 13:12:02,886 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 13:12:02,886 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 13:12:02,886 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 13:12:09,734 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:12:09,734 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:12:09,734 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:12:09,734 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:34:45,172 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------粤信云公众号-----------------------
+2020-10-16 13:34:54,826 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 13:35:01,859 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:35:01,859 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:35:10,487 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 13:35:10,487 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 13:35:10,487 INFO [root] [personal_center_page.py(personal_center_page:20)] - ------------------健康数据空间公众号-----------------------
+2020-10-16 13:35:15,861 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 13:35:15,861 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 13:35:15,861 INFO [root] [base.py(assert_png:31)] - ----------个人中心页面-断言成功,目标存在---------
+2020-10-16 13:35:22,798 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:35:22,798 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:35:22,798 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 13:35:22,798 INFO [root] [base.py(assert_png:31)] - ----------微信主页第一次断言--断言成功,目标存在---------
+2020-10-16 14:12:49,666 INFO [root] [base.py(assert_png:31)] - ----------首次进入健康数据空间-断言成功,目标存在---------
+2020-10-16 17:19:22,555 ERROR [root] [base.py(assert_png:35)] - ----------微信主页第一次断言--断言失败,目标不存在！！！！---------
+2020-10-16 17:19:37,364 INFO [root] [base.py(assert_png:31)] - ----------关闭微信APP后的主页页面--断言成功,目标存在---------

@@ -23,7 +23,7 @@ class AppDriver:
         return app_driver
 
     @classmethod
-    def quit(cls):
+    def close(cls):
         time.sleep(1)
         stop_app(cls.config["appPackage"])
 
