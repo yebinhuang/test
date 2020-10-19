@@ -2,6 +2,10 @@
 site = "G:/app_airtest_auto/png/"
 
 # --------------------------------------   A.微信app--wechat_png/   --------------------------------------------
+# 取消关注公众号与关注公众号
+
+# 清除缓存
+
 # 主页
 wechat_png = "wechat_png/"
 A = site + wechat_png
@@ -89,23 +93,39 @@ tijiao_btn = B + "tijiao_btn.png"
 # 返回数据空间
 fanhui_jksjkj_btn = B + "fanhui_jksjkj_btn.png"
 
-# --------------------------------------   C.健康数据空间--jksjkj_png/   --------------------------------------------
+# --------------------------------------   C.健康数据空间--health_data_space_png/   --------------------------------------
+# 清除token
 
-jksjkj_png = "jksjkj_png/"
-C = site + jksjkj_png
-# 首次进入健康数据空间
-xinxishouquan = C + "xinxishouquan.png"
-jksjkj_rukou = C + "jksjkj_rukou.png"
 
-grzx_duanyan = C + "grzx_duanyan.png"
-# 健康态势入口
-jkts_rukou = C + "jkts_rukou.png"
+# 项目元素地址
+health_data_space_png = "health_data_space_png/"
+C = site + health_data_space_png
+# 首次进入健康数据空间---信息授权页面(利用click_8的方法进行点击)
+authorization_information = C + "authorization_information.png"
+# 健康数据空间入口(微信公众号跳转H5页面)
+health_data_space_entrance = C + "health_data_space_entrance.png"
+
+"""个人中心页面"""
+# 进入个人中心断言的元素
+personal_center_assert = C + "personal_center_assert.png"
+# 备注：用户认证----选择下方的图标元素做为入口
+# 健康态势入口(调用时，需要调用上滑self.up())
+healthy_entrance = C + "healthy_entrance.png"
+# 动态码入口
+dynamic_code_entrance = C + "dynamic_code_entrance.png"
+# 健康日记入口
+health_diary_entrance = C + "health_diary_entrance.png"
+# 我的名片入口
+my_name_card_entrance = C + "my_name_card_entrance.png"
+
+"""健康态势页面(健康档案页面)"""
 # 健康态势断言
-jkts_duanyan = C + "jkts_duanyan.png"
+healthy_assert = C + "healthy_assert.png"
+# 健康档案入口
+health_record_entrance = C + "health_record_entrance.png"
 
-jkda_rukou = C + "jkda_rukou.png"
-
-jr_jkda_duanyuan = C + "jr_jkda_duanyuan.png"
+pass
+cases_of_the_profile_assert = C + "cases_of_the_profile_assert.png"
 
 blgy_zk_click = C + "blgy_zk_dianji.png"
 
@@ -114,9 +134,18 @@ blgy_zk_duanyan = C + "blgy_zk_duanyan.png"
 blgy_guanbi = C + "blgy_guanbi.png"
 
 tp_duanyan = C + "tp_duanyan.png"
-
+# 健康报告点击
 jcbg_dianji = C + "jcbg_dianji.png"
+# 胶片图片入口
+jp_png_rukou = C + "jp_png_rukou.png"
+# 展开按钮------仅一个按钮时可用
+zhangkai_btn = C + "zhangkai_btn.png"
+# 关闭展开按钮
+close_zhangkai_btn = C + "close_zhangkai_btn.png"
+# 播放胶片
+# 停止播放与翻页
 
+# 胶片断言
 jp_duanyan = C + "jp_duanyan.png"
 
 jr_jp_duanyan = C + "jr_jp_duanyan.png"

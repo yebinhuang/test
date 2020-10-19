@@ -23,12 +23,13 @@ class BackHomePage(Base):
         else:
             pass
         # 不成功的执行
-        homepage = self.assert_png("微信主页第一次断言-", zhuye)
+        time.sleep(1)
+        homepage = self.assert_png("微信主页断言-", zhuye)
         i = "微信主页"
         if i in homepage:
             AppDriver().close()
             AppDriver().start()
-            time.sleep(5)
+            time.sleep(6)
             self.assert_png("关闭微信APP后的主页页面-", zhuye)
 
 

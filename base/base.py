@@ -1,5 +1,8 @@
 # 对象库层-基类，把定位元素的方法定义在基类中
 import logging
+
+import pytesseract
+from PIL import Image
 from airtest.core.api import *
 from app_util import AppDriver, logger_config
 
@@ -20,7 +23,7 @@ class Base:
     # poco----点击输入事件
     def p_click_input(self, location, txt):
         self.driver(location).click()
-        text(txt)
+        text(txt, enter=False)
 
     # 断言
     # 图片断言
@@ -28,27 +31,32 @@ class Base:
     def assert_png(self, txt, filename=""):
         try:
             assert_exists(Template(filename=filename))
-            logging.info("----------{}-断言成功,目标存在---------".format(txt))
+            print("{}-断言成功,目标存在".format(txt))
             return "断言成功,目标存在"
         except:
             self.get_png(txt)
-            logging.error("----------{}-断言失败,目标不存在！！！！---------".format(txt))
+            logging.error("{}-断言失败,目标不存在！！！！!!".format(txt))
             return "{}-断言失败,目标不存在".format(txt)
 
     # 断言不存在
     def assert_not_png(self, txt, filename=""):
         try:
             assert_not_exists(Template(filename=filename))
-            logging.info("----------{}-断言成功,目标不存在---------".format(txt))
+            print("{}-断言成功,目标不存在".format(txt))
         except:
             self.get_png(txt)
-            logging.error("----------{}-断言不成功,目标存在！！！！---------".format(txt))
+            logging.error("{}-断言不成功,目标存在！！！！!!".format(txt))
             return "{}-断言失败,目标存在".format(txt)
         # 后期补判断
 
     # 文字断言
-    def assert_txt(self, txt, filename=""):
-        pass
+    def assert_txt(self, png):
+        # 只能读取数字-------因为没中文包
+        image = Image.open(png)
+        txt = pytesseract.image_to_string(image)
+        print("---------------------------")
+        print(txt)
+        return txt
 
     # 等待---参考----https://blog.csdn.net/qq_42775047/article/details/106444316
     """显示等来"""
@@ -113,10 +121,10 @@ class Base:
     # 中心点击和输入
     def click_5_input(self, txt, filename=""):
         touch(Template(filename=filename))
-        text(txt)
+        text(txt, enter=False)
 
     def input(self, txt):
-        text(txt)
+        text(txt, enter=False)
 
     # 右边沿点击和输入
     def click_6(self, filename=""):
@@ -124,7 +132,7 @@ class Base:
 
     def click_6_input(self, txt, filename=""):
         touch(Template(filename=filename, target_pos=6))
-        text(txt)
+        text(txt, enter=False)
 
     # 底部中间点击
     def click_8(self, filename=""):
@@ -136,10 +144,13 @@ class Base:
     def click_3(self, filename=""):
         touch(Template(filename=filename, target_pos=3))
 
+    def click_4(self, filename=""):
+        touch(Template(filename=filename, target_pos=4))
+
     # 底部中间点击输入
     def click_8_input(self, txt, filename=""):
         touch(Template(filename=filename, target_pos=8))
-        text(txt)
+        text(txt, enter=False)
 
     # 清除文本
     def clear_txt(self, location):
